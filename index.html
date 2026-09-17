@@ -9,8 +9,270 @@
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/features-footer.css">
 </head>
 <body>
 
+
+<!-- ===================== FEATURE SHOWCASE, IOT, HOW, CTA, MODALS & FOOTER ===================== -->
+<section class="sec feat" id="capturas" style="position:relative">
+    <div class="dot-field" aria-hidden="true"></div>
+    <div class="wrap" style="position:relative;z-index:1">
+        <div class="sec-head">
+            <span class="kicker" data-i18n="feat.kicker">Así se ve por dentro</span>
+            <h2 class="h-sec" data-i18n="feat.title">Una aplicación para cada persona que necesita saber qué está pasando.</h2>
+            <p class="lead" data-i18n="feat.lead">Tres vistas reales de la plataforma: el panel de un operador logístico, una alerta en el momento en que ocurre, y lo que ve un centro de salud cuando le está por llegar un envío.</p>
+        </div>
+
+        <div class="feat-grid">
+            <article class="feat-card reveal d1">
+                <div class="app feat-shot" aria-hidden="true">
+                    <div class="app-bar"><span class="dots"><i></i><i></i><i></i></span><span class="url">app.medicalsmartbox.com/operaciones</span></div>
+                    <div class="app-main" style="padding:12px">
+                        <div class="kpis" style="grid-template-columns:repeat(2,1fr)">
+                            <div class="kpi"><b class="tnum">18</b><span data-i18n="app.kpi1">Transportes activos</span></div>
+                            <div class="kpi k-crit"><b class="tnum">2</b><span data-i18n="app.kpi3">Alertas activas</span></div>
+                        </div>
+                        <div class="panel" style="margin-top:8px">
+                            <div class="panel-h"><h4 data-i18n="app.active">Transportes activos</h4><span class="badge b-info">4</span></div>
+                            <div class="row"><span class="id">TR-0417</span><span class="rt">Lima → Arequipa</span><span class="badge b-info" data-i18n="st.transit">En tránsito</span></div>
+                            <div class="row"><span class="id">TR-0251</span><span class="rt">Lima → Trujillo</span><span class="badge b-warn" data-i18n="st.delay">Retraso</span></div>
+                            <div class="row"><span class="id">TR-0244</span><span class="rt">Callao → Ica</span><span class="badge b-ok" data-i18n="st.delivered">Entregado</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feat-body">
+                    <h3 data-i18n="feat.f1t">Panel de operaciones</h3>
+                    <p data-i18n="feat.f1d">La vista con la que un operador logístico empieza el día: cuántos transportes están en ruta, cuáles necesitan atención primero y el estado de cada uno en un vistazo.</p>
+                </div>
+            </article>
+
+            <article class="feat-card reveal d2">
+                <div class="app feat-shot" aria-hidden="true">
+                    <div class="app-bar"><span class="dots"><i></i><i></i><i></i></span><span class="url">app.medicalsmartbox.com/alertas</span></div>
+                    <div class="app-main" style="padding:12px;gap:8px">
+                        <div class="mini-alert">
+                            <span class="bar" style="background:var(--crit)"></span>
+                            <div><h5 data-i18n="al.title">Temperatura fuera de rango</h5><p data-i18n="feat.f2d1">TR-0251 · Panamericana Sur</p></div>
+                            <time>13:42</time>
+                        </div>
+                        <div class="mini-alert">
+                            <span class="bar" style="background:var(--warn)"></span>
+                            <div><h5 data-i18n="feat.f2t2">Puerta abierta</h5><p data-i18n="feat.f2d2">SB-0139 · fuera de horario previsto</p></div>
+                            <time>12:05</time>
+                        </div>
+                        <div class="mini-alert">
+                            <span class="bar" style="background:var(--teal)"></span>
+                            <div><h5 data-i18n="feat.f2t3">Batería baja</h5><p data-i18n="feat.f2d3">SB-0182 · queda autonomía para 4 h</p></div>
+                            <time>10:20</time>
+                        </div>
+                    </div>
+                </div>
+                <div class="feat-body">
+                    <h3 data-i18n="feat.f2t">Alertas en el momento en que ocurren</h3>
+                    <p data-i18n="feat.f2d">Cada incidencia llega con la unidad, el lugar y la hora exacta, para que el equipo decida si hay que actuar antes de que el envío siga su ruta.</p>
+                </div>
+            </article>
+
+            <article class="feat-card reveal d3">
+                <div class="app feat-shot" aria-hidden="true">
+                    <div class="app-bar"><span class="dots"><i></i><i></i><i></i></span><span class="url">app.medicalsmartbox.com/recepcion</span></div>
+                    <div class="app-main" style="padding:12px">
+                        <div class="panel">
+                            <div class="panel-h"><h4 data-i18n="feat.f3lab1">Envíos entrantes</h4><span class="badge b-info">3</span></div>
+                            <div class="row"><span class="id">TR-0417</span><span class="rt" data-i18n="feat.f3r1">Vacunas · llega 14:35</span><span class="badge b-info" data-i18n="st.transit">En tránsito</span></div>
+                            <div class="row"><span class="id">TR-0251</span><span class="rt" data-i18n="feat.f3r2">Muestras · llega 16:10</span><span class="badge b-warn" data-i18n="st.watch">Observación</span></div>
+                            <div class="row"><span class="id">TR-0245</span><span class="rt" data-i18n="feat.f3r3">Sangre · recibido</span><span class="badge b-ok" data-i18n="st.delivered">Conforme</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feat-body">
+                    <h3 data-i18n="feat.f3t">Lo que ve un centro de salud</h3>
+                    <p data-i18n="feat.f3d">Una lista simple de lo que está por llegar, con su condición durante el viaje, para que recepción se organice antes de que el transporte esté en la puerta.</p>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="sec iot" id="datos">
+    <div class="wrap">
+        <div class="sec-head">
+            <span class="kicker" data-i18n="iot.kicker">La capa de datos</span>
+            <h2 class="h-sec" data-i18n="iot.title">Los datos comienzan durante el transporte.</h2>
+            <p class="lead" data-i18n="iot.lead">El SmartBox viaja dentro del vehículo y mide lo que ocurre dentro de la caja. La plataforma es la que convierte esas lecturas en algo accionable.</p>
+        </div>
+
+        <div class="flow">
+            <article class="flow-node">
+                <span class="n">SmartBox</span>
+                <h4 data-i18n="iot.n1t">El dispositivo viaja con el envío</h4>
+                <p data-i18n="iot.n1d">Una unidad compacta dentro del contenedor refrigerado, conectada a la red móvil.</p>
+                <span class="art" aria-hidden="true">
+          <svg viewBox="0 0 150 86" width="150" height="86">
+            <rect x="16" y="18" width="112" height="56" rx="12" fill="#10312F"/>
+            <rect x="16" y="18" width="112" height="20" rx="12" fill="#1B403D"/>
+            <rect x="28" y="46" width="42" height="16" rx="5" fill="#B9DDA0" opacity=".9"/>
+            <circle cx="104" cy="54" r="7" fill="none" stroke="#B9DDA0" stroke-width="1.6"/><circle cx="104" cy="54" r="2.4" fill="#B9DDA0"/>
+            <path d="M40 12c6-6 16-6 22 0M46 7c3-3 10-3 13 0" stroke="#0F7A70" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+          </svg>
+        </span>
+            </article>
+            <article class="flow-node">
+                <span class="n" data-i18n="iot.n2">Sensores</span>
+                <h4 data-i18n="iot.n2t">Seis señales, una por minuto</h4>
+                <p data-i18n="iot.n2d">Temperatura, peso, apertura de puerta, GPS, batería y estado del equipo.</p>
+                <span class="art" aria-hidden="true">
+          <svg viewBox="0 0 150 86" width="150" height="86">
+            <g stroke="#0F7A70" stroke-width="1.6" fill="none" stroke-linecap="round">
+              <path d="M6 60h20l8-20 10 40 10-30 6 12h18"/><path d="M84 60h14l6-14 8 26 7-20 5 8h20" opacity=".45"/>
+            </g>
+            <g fill="#10312F" font-family="Plus Jakarta Sans" font-size="9"><text x="6" y="20">4.2 °C</text><text x="52" y="20">18.4 kg</text><text x="106" y="20">82 %</text></g>
+          </svg>
+        </span>
+            </article>
+            <article class="flow-node">
+                <span class="n" data-i18n="iot.n3">Datos</span>
+                <h4 data-i18n="iot.n3t">Se ordenan y se contrastan</h4>
+                <p data-i18n="iot.n3d">Cada lectura se compara con el rango esperado del envío y se marca si se desvía.</p>
+                <span class="art" aria-hidden="true">
+          <svg viewBox="0 0 150 86" width="150" height="86">
+            <rect x="8" y="24" width="134" height="14" rx="7" fill="#E4F1EB"/>
+            <rect x="8" y="44" width="96" height="14" rx="7" fill="#E7ECF7"/>
+            <rect x="8" y="64" width="60" height="14" rx="7" fill="#FBE6E1"/>
+            <circle cx="118" cy="51" r="5" fill="#0F7A70"/>
+          </svg>
+        </span>
+            </article>
+            <article class="flow-node">
+                <span class="n">Medical SmartBox</span>
+                <h4 data-i18n="iot.n4t">La plataforma decide qué mostrar</h4>
+                <p data-i18n="iot.n4d">Mapas, alertas, historial y confirmaciones: el lugar donde el equipo trabaja.</p>
+                <span class="art" aria-hidden="true">
+          <svg viewBox="0 0 150 86" width="150" height="86">
+            <rect x="8" y="10" width="134" height="68" rx="10" fill="#fff" stroke="#DFE4DE"/>
+            <rect x="8" y="10" width="134" height="14" rx="10" fill="#F3F7F4"/>
+            <rect x="16" y="32" width="58" height="38" rx="7" fill="#E7F0EA"/>
+            <path d="M22 62c10-4 14-20 26-22s16 8 22-6" stroke="#0F7A70" stroke-width="2" fill="none" stroke-linecap="round"/>
+            <rect x="82" y="32" width="52" height="11" rx="5" fill="#E4F1EB"/>
+            <rect x="82" y="47" width="52" height="11" rx="5" fill="#F0F3F0"/>
+            <rect x="82" y="62" width="34" height="8" rx="4" fill="#FBE6E1"/>
+          </svg>
+        </span>
+            </article>
+        </div>
+
+        <div class="iot-note">
+      <span aria-hidden="true" style="width:44px;height:44px;border-radius:14px;background:var(--teal-pale);display:grid;place-items:center">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 12.5 7.5 8l3.5 3.5L17 5.5" stroke="#0F7A70" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.6 5.5H17V10" stroke="#0F7A70" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+            <p data-i18n="iot.note">El hardware recopila los datos. La plataforma los convierte en información con la que se puede tomar una decisión: reencaminar, avisar al destino o documentar lo que pasó.</p>
+        </div>
+    </div>
+</section>
+
+<section class="sec how" id="como-funciona">
+    <div class="wrap">
+        <div class="sec-head">
+            <span class="kicker" data-i18n="how.kicker">Cómo funciona</span>
+            <h2 class="h-sec" data-i18n="how.title">Cuatro pasos entre la salida y la entrega.</h2>
+        </div>
+        <div class="how-grid">
+            <article class="how-card"><span class="num">01</span><h4 data-i18n="how.s1t">Sale el transporte</h4><p data-i18n="how.s1d">El envío se prepara, se registra su rango de temperatura y comienza el recorrido.</p></article>
+            <article class="how-card"><span class="num">02</span><h4 data-i18n="how.s2t">El SmartBox mide</h4><p data-i18n="how.s2d">Los sensores registran condiciones y ubicación durante todo el trayecto.</p></article>
+            <article class="how-card"><span class="num">03</span><h4 data-i18n="how.s3t">Los datos llegan a la plataforma</h4><p data-i18n="how.s3d">Cada lectura se ordena en el mapa, el historial y el panel del transporte.</p></article>
+            <article class="how-card"><span class="num">04</span><h4 data-i18n="how.s4t">El equipo actúa</h4><p data-i18n="how.s4d">Se atiende la alerta, se avisa al destino y se confirma la entrega con su registro.</p></article>
+        </div>
+    </div>
+</section>
+
+<section class="cta" id="demo">
+    <div class="wrap">
+        <div class="cta-box">
+            <span class="cta-glow" aria-hidden="true"></span>
+            <div style="position:relative;z-index:1">
+                <h2 data-i18n="cta.title">Haz visible cada parte del recorrido.</h2>
+                <p data-i18n="cta.sub">Conoce el estado de tus transportes, detecta incidencias y mantén la trazabilidad de cada envío.</p>
+                <div class="cta-actions">
+                    <a href="https://app.medicalsmartbox.com" class="btn btn-light btn-lg" data-i18n="cta.primary">Ir a la Web App</a>
+                    <a href="#" class="btn btn-lg js-login" style="border-color:rgba(255,255,255,.28);color:#F5F9F7" data-i18n="cta.secondary">Iniciar sesión</a>
+                </div>
+                <p class="micro" style="color:rgba(245,249,247,.5);margin-top:1.2rem" data-i18n="cta.note">Demo guiada de 20 minutos con datos de ejemplo.</p>
+            </div>
+            <div class="cta-prev">
+                <div class="line"><b>TR-0417</b><span class="badge b-info" data-i18n="st.transit">En tránsito</span></div>
+                <div class="line"><span data-i18n="d.temp">Temperatura</span><b class="tnum" data-live="temp">4.2 °C</b></div>
+                <div class="line"><span data-i18n="d.eta">ETA</span><b class="tnum" data-live="eta">14:35</b></div>
+                <div class="line"><span data-i18n="d.trace">Eventos registrados</span><b class="tnum">6</b></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<dialog id="terms-dialog" class="terms-modal" aria-labelledby="tc-title">
+    <div class="terms-modal-in">
+        <button type="button" class="terms-close" id="termsClose" aria-label="Cerrar">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 3l10 10M13 3 3 13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </button>
+        <span class="kicker" data-i18n="tc.kicker">Legal</span>
+        <h2 id="tc-title" class="h-sec" style="font-size:clamp(1.5rem,3vw,2rem)" data-i18n="tc.title">Términos y Condiciones de Servicio</h2>
+        <p class="lead" style="margin:.6rem 0 1.4rem" data-i18n="tc.lead">Estos términos aplican por igual al Landing Page, a la Web Application y a la API RESTful de Medical SmartBox.</p>
+        <div class="terms-box">
+            <h3 data-i18n="tc.h1">1. Aceptación de los términos</h3>
+            <p data-i18n="tc.p1">Al acceder al Landing Page, registrarte o utilizar la Web Application de Medical SmartBox, aceptas estos Términos y Condiciones.</p>
+        </div>
+    </div>
+</dialog>
+
+<dialog id="privacy-dialog" class="terms-modal" aria-labelledby="pp-title">
+    <div class="terms-modal-in">
+        <button type="button" class="terms-close" id="privacyClose" aria-label="Cerrar">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 3l10 10M13 3 3 13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </button>
+        <span class="kicker" data-i18n="pp.kicker">Legal</span>
+        <h2 id="pp-title" class="h-sec" style="font-size:clamp(1.5rem,3vw,2rem)" data-i18n="pp.title">Política de Privacidad</h2>
+        <p class="lead" style="margin:.6rem 0 1.4rem" data-i18n="pp.lead">Esta política explica qué datos recopila Medical SmartBox y cómo se usan.</p>
+    </div>
+</dialog>
+
+<dialog id="login-dialog" class="terms-modal login-modal" aria-labelledby="login-title">
+    <div class="terms-modal-in">
+        <button type="button" class="terms-close" id="loginClose" aria-label="Cerrar">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 3l10 10M13 3 3 13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </button>
+        <span class="kicker" data-i18n="login.kicker">Web Application</span>
+        <h2 id="login-title" class="h-sec" style="font-size:clamp(1.4rem,3vw,1.8rem)" data-i18n="login.title">Inicia sesión en Medical SmartBox</h2>
+        <form class="login-form" id="loginForm">
+            <div class="login-field">
+                <label for="login-email" data-i18n="login.emailLabel">Correo corporativo</label>
+                <input type="email" id="login-email" name="email" placeholder="nombre@organizacion.com" autocomplete="email" required>
+            </div>
+            <div class="login-field">
+                <label for="login-pass" data-i18n="login.passLabel">Contraseña</label>
+                <input type="password" id="login-pass" name="password" placeholder="••••••••" autocomplete="current-password" required>
+            </div>
+            <button type="submit" class="btn btn-accent btn-lg" style="width:100%" data-i18n="login.submit">Iniciar sesión</button>
+        </form>
+    </div>
+</dialog>
+
+<footer class="foot">
+    <div class="wrap">
+        <div class="foot-top">
+            <div class="foot-brand">
+                <a href="#top" class="brand">
+                    <span class="brand-mark" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M1 9.5h3.2l1.6-4.2 2.4 8 2-5.3 1.3 1.5H17" stroke="#B9DDA0" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                    Medical SmartBox
+                </a>
+                <p data-i18n="foot.tag">Plataforma de monitoreo y trazabilidad para el transporte de productos médicos.</p>
+            </div>
+        </div>
+        <div class="foot-bot">
+            <span>© 2026 Medical SmartBox</span>
+            <nav><a href="#" id="footPrivacyLink" data-i18n="foot.privacy">Privacidad</a><a href="#" id="footTermsLink" data-i18n="foot.terms">Términos</a></nav>
+        </div>
+    </div>
+</footer>
+<script src="js/features-footer.js"></script>
 </body>
 </html>
