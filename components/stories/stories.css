@@ -1,0 +1,17 @@
+
+
+.story{background:var(--ink);color:#F2F6F3;border-radius:clamp(0px,3vw,40px);margin-inline:clamp(0px,2vw,24px);overflow:hidden;position:relative}
+.story .kicker{color:var(--lime)}.story .kicker::before{background:var(--lime)}
+.story .lead{color:rgba(242,246,243,.75)}
+.story h2{color:#fff}
+.story-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:clamp(32px,4vw,48px)}
+.story-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:var(--r-l);padding:1.4rem;display:flex;flex-direction:column;gap:.6rem;transition:background .2s ease}
+.story-card:hover{background:rgba(255,255,255,.08)}
+.story-role{font-size:.78rem;font-weight:600;color:var(--lime);letter-spacing:.02em}
+.story-card p{font-size:.92rem;color:rgba(242,246,243,.82);line-height:1.55}
+.story-cta{margin-top:1.8rem;font-size:.92rem;color:rgba(242,246,243,.7)}
+.story-cta a{color:var(--lime);font-weight:600;text-decoration:underline}
+
+@media (max-width:1080px){
+    .story-grid{grid-template-columns:1fr}
+}
