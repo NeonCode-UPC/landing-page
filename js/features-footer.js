@@ -36,5 +36,9 @@ if(loginDialog && loginLinks.length){
     if(loginClose) loginClose.addEventListener("click",()=>loginDialog.close());
     loginDialog.addEventListener("click",e=>{ if(e.target===loginDialog) loginDialog.close(); });
     const loginForm=document.getElementById("loginForm");
-    if(loginForm) loginForm.addEventListener("submit",e=>{ e.preventDefault(); loginDialog.close(); });
+    if(loginForm) loginForm.addEventListener("submit",e=>{
+        e.preventDefault();
+        loginDialog.close();
+        window.location.href = "https://neoncode-upc.github.io/frontend/home";
+    });
 }
