@@ -13,12 +13,12 @@
 .testi-who .id span{font-size:.76rem;color:var(--ink-3)}
 
 @media (max-width:1080px){
-    .testi-grid{grid-template-columns:1fr 1fr}
-    .testi-card:nth-child(1){grid-column:1 / -1;flex-direction:row;align-items:center;gap:1.6rem;padding:1.6rem 2rem}
-    .testi-card:nth-child(1) p{max-width:none}
-    .testi-card:nth-child(4){grid-column:1 / -1}
+  .testi-grid{grid-template-columns:1fr 1fr}
+  .testi-card:nth-child(1){grid-column:1 / -1;flex-direction:row;align-items:center;gap:1.6rem;padding:1.6rem 2rem}
+  .testi-card:nth-child(1) p{max-width:none}
+  .testi-card:nth-child(4){grid-column:1 / -1}
 }
 @media (max-width:720px){
-    .testi-grid{grid-template-columns:1fr}
-    .testi-card:nth-child(1),.testi-card:nth-child(4){flex-direction:column;align-items:stretch}
+  .testi-grid{grid-template-columns:1fr}
+  .testi-card:nth-child(1),.testi-card:nth-child(4){flex-direction:column;align-items:stretch}
 }
