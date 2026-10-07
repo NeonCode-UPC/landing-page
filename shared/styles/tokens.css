@@ -1,0 +1,24 @@
+
+:root {
+    --ivory:#F7F4EE; --warm:#FFFDF9; --mist:#EDF1EE;
+    --ink:#10312F; --ink-2:#2E4A47; --ink-3:#6B827F;
+    --line:#DFE4DE; --line-soft:#E9ECE6;
+
+    --teal:#0F7A70; --teal-deep:#0B4F4A; --teal-pale:#E4F1EB;
+    --blue:#1F3C77; --blue-pale:#E7ECF7;
+    --mint:#CDE7DC; --lime:#B9DDA0;
+    --coral:#E05A46; --coral-pale:#FBE6E1;
+    --peach:#F6CBAC; --lav:#DCD9F2; --lav-pale:#EFEDFA; --violet:#5D57B0;
+
+    --ok:#2E9E6B; --warn:#D99B2B; --crit:#E05A46;
+
+    --r-s:10px; --r-m:16px; --r-l:24px; --r-xl:34px; --r-pill:999px;
+    --sh-1:0 1px 2px rgba(16,49,47,.05), 0 2px 8px rgba(16,49,47,.04);
+    --sh-2:0 10px 24px -12px rgba(16,49,47,.18), 0 2px 6px rgba(16,49,47,.05);
+    --sh-3:0 40px 80px -40px rgba(11,79,74,.45), 0 12px 28px -18px rgba(16,49,47,.25);
+
+    --display:"Bricolage Grotesque","Inter",system-ui,sans-serif;
+    --ui:"Inter",system-ui,-apple-system,Segoe UI,sans-serif;
+    --pad:clamp(20px,5vw,72px);
+    --maxw:1240px;
+}
