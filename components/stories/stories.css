@@ -13,5 +13,5 @@
 .story-cta a{color:var(--lime);font-weight:600;text-decoration:underline}
 
 @media (max-width:1080px){
-    .story-grid{grid-template-columns:1fr}
+  .story-grid{grid-template-columns:1fr}
 }
