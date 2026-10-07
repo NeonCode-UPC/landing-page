@@ -1,0 +1,26 @@
+
+
+.mon{background:var(--ink);color:#F2F6F3;border-radius:clamp(0px,3vw,40px);margin-inline:clamp(0px,2vw,24px);overflow:hidden}
+.mon .kicker{color:var(--lime)}.mon .kicker::before{background:var(--lime)}
+.mon .lead{color:rgba(242,246,243,.72)}
+.mon h2{color:#F7FAF8}
+.mon-stage{position:relative;margin-top:clamp(32px,4vw,52px)}
+.mon-app{box-shadow:0 60px 110px -50px rgba(0,0,0,.75)}
+.mon-app .app-main{background:#fff}
+.mon-layout{display:grid;grid-template-columns:1.62fr .9fr;gap:12px}
+.mon-map{border-radius:16px;border:1px solid var(--line-soft);min-height:340px;overflow:hidden}
+.read{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.read .cell{background:#fff;border:1px solid var(--line-soft);border-radius:13px;padding:.55rem .6rem}
+.read .cell b{font-family:var(--display);font-size:1.1rem;letter-spacing:-.03em;display:block;line-height:1.15}
+.read .cell span{font-size:.63rem;color:var(--ink-3)}
+.mon-floats{position:absolute;inset:0;pointer-events:none;z-index:4}
+.mon-floats .chip{position:absolute}
+.mf1{left:-16px;top:16%}.mf2{right:-18px;top:33%}.mf3{left:-6px;bottom:17%}.mf4{right:6%;bottom:-18px}
+
+@media (max-width:860px){
+  .mon-floats{display:none}
+  .mon{border-radius:0;margin-inline:0}
+}
+@media (max-width:720px){
+  .mon-layout{grid-template-columns:1fr}
+}
