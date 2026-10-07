@@ -1,10 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+<!-- ALERTS -->
+<section class="sec" id="alertas">
+  <div class="wrap">
+    <div class="sec-head" style="margin-bottom:clamp(28px,4vw,48px)">
+      <span class="kicker" data-i18n="alr.kicker">Alertas</span>
+      <h2 class="h-sec" data-i18n="alr.title">Entérate en el momento en que algo cambia.</h2>
+      <p class="lead" data-i18n="alr.lead">Cada alerta incluye el valor medido, el valor esperado y el transporte afectado, para decidir con toda la información sin recorrer varias pantallas.</p>
+    </div>
 
-</body>
-</html>
+    <div class="alerts-grid">
+      <figure class="alert-shot">
+        <img src="assets/alerta-critica.png" width="587" height="565" loading="lazy" alt="Captura de la Web App: alerta crítica de temperatura sobre el rango esperado, 8,7 °C, en el transporte TR-0251">
+      </figure>
+
+      <div class="alert-side">
+        <article class="mini-alert"><span class="bar" style="background:var(--warn)"></span><div><h5 data-i18n="alr.m1t">Puerta abierta fuera de parada</h5><p>TR-0251 · Km 88 · 2 min</p></div><time class="tnum">12:20</time></article>
+        <article class="mini-alert"><span class="bar" style="background:var(--warn)"></span><div><h5 data-i18n="alr.m2t">Batería baja del SmartBox</h5><p>SB-0177 · 18 %</p></div><time class="tnum">11:05</time></article>
+        <article class="mini-alert"><span class="bar" style="background:var(--ok)"></span><div><h5 data-i18n="alr.m3t">Desvío de ruta resuelto</h5><p>TR-0244 · <span data-i18n="st.resolved">Resuelta</span></p></div><time class="tnum">09:48</time></article>
+        <article class="mini-alert"><span class="bar" style="background:var(--ok)"></span><div><h5 data-i18n="alr.m4t">Entrega confirmada</h5><p>TR-0240 · Clínica San Borja</p></div><time class="tnum">08:12</time></article>
+      </div>
+    </div>
+  </div>
+</section>
