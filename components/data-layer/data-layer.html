@@ -1,10 +1,76 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+<!-- IOT -->
+<section class="sec iot" id="datos">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker" data-i18n="iot.kicker">La capa de datos</span>
+      <h2 class="h-sec" data-i18n="iot.title">Los datos se generan durante el transporte.</h2>
+      <p class="lead" data-i18n="iot.lead">El SmartBox viaja dentro del vehículo y mide lo que ocurre dentro del contenedor. La plataforma convierte esas lecturas en información accionable.</p>
+    </div>
 
-</body>
-</html>
+    <div class="flow">
+      <article class="flow-node">
+        <span class="n">SmartBox</span>
+        <h4 data-i18n="iot.n1t">El dispositivo viaja con el envío</h4>
+        <p data-i18n="iot.n1d">Una unidad compacta dentro del contenedor refrigerado, conectada a la red móvil.</p>
+        <span class="art" aria-hidden="true">
+          <svg viewBox="0 0 150 86" width="150" height="86">
+            <rect x="16" y="18" width="112" height="56" rx="12" fill="#10312F"/>
+            <rect x="16" y="18" width="112" height="20" rx="12" fill="#1B403D"/>
+            <rect x="28" y="46" width="42" height="16" rx="5" fill="#B9DDA0" opacity=".9"/>
+            <circle cx="104" cy="54" r="7" fill="none" stroke="#B9DDA0" stroke-width="1.6"/><circle cx="104" cy="54" r="2.4" fill="#B9DDA0"/>
+            <path d="M40 12c6-6 16-6 22 0M46 7c3-3 10-3 13 0" stroke="#0F7A70" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+          </svg>
+        </span>
+      </article>
+      <article class="flow-node">
+        <span class="n" data-i18n="iot.n2">Sensores</span>
+        <h4 data-i18n="iot.n2t">Seis señales, una por minuto</h4>
+        <p data-i18n="iot.n2d">Temperatura, peso, apertura de puerta, GPS, batería y estado del equipo.</p>
+        <span class="art" aria-hidden="true">
+          <svg viewBox="0 0 150 86" width="150" height="86">
+            <g stroke="#0F7A70" stroke-width="1.6" fill="none" stroke-linecap="round">
+              <path d="M6 60h20l8-20 10 40 10-30 6 12h18"/><path d="M84 60h14l6-14 8 26 7-20 5 8h20" opacity=".45"/>
+            </g>
+            <g fill="#10312F" font-family="Plus Jakarta Sans" font-size="9"><text x="6" y="20">4.2 °C</text><text x="52" y="20">18.4 kg</text><text x="106" y="20">82 %</text></g>
+          </svg>
+        </span>
+      </article>
+      <article class="flow-node">
+        <span class="n" data-i18n="iot.n3">Datos</span>
+        <h4 data-i18n="iot.n3t">Se ordenan y se contrastan</h4>
+        <p data-i18n="iot.n3d">Cada lectura se compara con el rango esperado del envío y se marca si se desvía.</p>
+        <span class="art" aria-hidden="true">
+          <svg viewBox="0 0 150 86" width="150" height="86">
+            <rect x="8" y="24" width="134" height="14" rx="7" fill="#E4F1EB"/>
+            <rect x="8" y="44" width="96" height="14" rx="7" fill="#E7ECF7"/>
+            <rect x="8" y="64" width="60" height="14" rx="7" fill="#FBE6E1"/>
+            <circle cx="118" cy="51" r="5" fill="#0F7A70"/>
+          </svg>
+        </span>
+      </article>
+      <article class="flow-node">
+        <span class="n">Medical SmartBox</span>
+        <h4 data-i18n="iot.n4t">La plataforma decide qué mostrar</h4>
+        <p data-i18n="iot.n4d">Mapas, alertas, historial y confirmaciones: el espacio de trabajo del equipo.</p>
+        <span class="art" aria-hidden="true">
+          <svg viewBox="0 0 150 86" width="150" height="86">
+            <rect x="8" y="10" width="134" height="68" rx="10" fill="#fff" stroke="#DFE4DE"/>
+            <rect x="8" y="10" width="134" height="14" rx="10" fill="#F3F7F4"/>
+            <rect x="16" y="32" width="58" height="38" rx="7" fill="#E7F0EA"/>
+            <path d="M22 62c10-4 14-20 26-22s16 8 22-6" stroke="#0F7A70" stroke-width="2" fill="none" stroke-linecap="round"/>
+            <rect x="82" y="32" width="52" height="11" rx="5" fill="#E4F1EB"/>
+            <rect x="82" y="47" width="52" height="11" rx="5" fill="#F0F3F0"/>
+            <rect x="82" y="62" width="34" height="8" rx="4" fill="#FBE6E1"/>
+          </svg>
+        </span>
+      </article>
+    </div>
+
+    <div class="iot-note">
+      <span aria-hidden="true" style="width:44px;height:44px;border-radius:14px;background:var(--teal-pale);display:grid;place-items:center">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 12.5 7.5 8l3.5 3.5L17 5.5" stroke="#0F7A70" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.6 5.5H17V10" stroke="#0F7A70" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+      <p data-i18n="iot.note">El hardware recopila los datos; la plataforma los convierte en información para decidir: reencaminar, avisar al destino o documentar lo ocurrido.</p>
+    </div>
+  </div>
+</section>
