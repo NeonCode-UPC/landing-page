@@ -1,0 +1,65 @@
+<!-- NAV -->
+<header class="nav" id="nav">
+  <div class="wrap nav-in">
+    <a href="#top" class="brand">
+      <span class="brand-mark" aria-hidden="true">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M1 9.5h3.2l1.6-4.2 2.4 8 2-5.3 1.3 1.5H17" stroke="#B9DDA0" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+      Medical SmartBox
+    </a>
+
+    <nav class="nav-links" aria-label="Principal">
+      <a href="#plataforma" data-i18n="nav.platform">Plataforma</a>
+      <a href="#como-funciona" data-i18n="nav.how">Cómo funciona</a>
+      <a href="#soluciones" data-i18n="nav.solutions">Soluciones</a>
+      <a href="#planes" data-i18n="nav.plans">Planes</a>
+      <a href="#contacto" data-i18n="foot.contact">Contacto</a>
+    </nav>
+
+    <div class="nav-right">
+      <button class="lang-toggle js-lang" data-lang="en" role="switch" aria-checked="true" aria-label="Español / English">
+        <span class="lt-thumb" aria-hidden="true"></span>
+        <span class="lt-opt" aria-hidden="true">ES</span>
+        <span class="lt-opt" aria-hidden="true">EN</span>
+      </button>
+      <a href="#" class="nav-login js-login" data-i18n="nav.login">Iniciar sesión</a>
+      <a href="https://neoncode-upc.github.io/frontend/home" class="btn btn-primary btn-sm" data-i18n="nav.demo">Ir a la Web App</a>
+      <button class="burger" id="burger" aria-label="Menú" aria-expanded="false">
+        <svg width="18" height="12" viewBox="0 0 18 12" fill="none"><path d="M0 1h18M0 6h18M0 11h12" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="drawer" id="drawer" data-open="false">
+  <nav aria-label="Móvil">
+    <a href="#plataforma" data-i18n="nav.platform">Plataforma</a>
+    <a href="#como-funciona" data-i18n="nav.how">Cómo funciona</a>
+    <a href="#soluciones" data-i18n="nav.solutions">Soluciones</a>
+    <a href="#trazabilidad" data-i18n="nav.trace">Trazabilidad</a>
+    <a href="#planes" data-i18n="nav.plans">Planes</a>
+    <a href="#contacto" data-i18n="foot.contact">Contacto</a>
+  </nav>
+  <div class="acts">
+    <a href="https://neoncode-upc.github.io/frontend/home" class="btn btn-primary" data-i18n="nav.demo">Ir a la Web App</a>
+    <a href="#" class="btn btn-ghost js-login" data-i18n="nav.login">Iniciar sesión</a>
+  </div>
+</div>
+
+<!-- ROUTE RAIL -->
+<nav class="route-rail" id="rail" aria-label="Recorrido de la página">
+  <span class="track" aria-hidden="true"></span>
+  <span class="fill" id="railFill" aria-hidden="true"></span>
+  <a class="rr-item" href="#top"><span class="dot"></span><span class="nm" data-i18n="rail.start">Inicio</span></a>
+  <a class="rr-item" href="#plataforma"><span class="dot"></span><span class="nm" data-i18n="nav.platform">Plataforma</span></a>
+  <a class="rr-item" href="#monitoreo"><span class="dot"></span><span class="nm" data-i18n="rail.mon">Monitoreo</span></a>
+  <a class="rr-item" href="#alertas"><span class="dot"></span><span class="nm" data-i18n="rail.alerts">Alertas</span></a>
+  <a class="rr-item" href="#trazabilidad"><span class="dot"></span><span class="nm" data-i18n="nav.trace">Trazabilidad</span></a>
+  <a class="rr-item" href="#soluciones"><span class="dot"></span><span class="nm" data-i18n="nav.solutions">Soluciones</span></a>
+  <a class="rr-item" href="#capturas"><span class="dot"></span><span class="nm" data-i18n="rail.feat">Capturas</span></a>
+  <a class="rr-item" href="#equipo"><span class="dot"></span><span class="nm" data-i18n="rail.team">Equipo</span></a>
+  <a class="rr-item" href="#historias-usuario"><span class="dot"></span><span class="nm" data-i18n="rail.stories">Historias</span></a>
+  <a class="rr-item" href="#testimonios"><span class="dot"></span><span class="nm" data-i18n="rail.testi">Testimonios</span></a>
+  <a class="rr-item" href="#datos"><span class="dot"></span><span class="nm" data-i18n="rail.data">Datos</span></a>
+  <a class="rr-item" href="#planes"><span class="dot"></span><span class="nm" data-i18n="rail.plans">Planes</span></a>
+</nav>
