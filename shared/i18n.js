@@ -33,7 +33,7 @@ window.onLangChange = function(fn) {
 };
 
 window.applyLang = function(lang) {
-  LANG = lang || "en";
+  LANG = lang === "es" ? "es" : "en";
   const d = I18N[LANG] || {};
 
   document.querySelectorAll("[data-i18n]").forEach(el => {
@@ -89,7 +89,7 @@ window.initI18n = function() {
   initLangToggles();
   let start = "en";
   try {
-    start = localStorage.getItem("msb-lang") || "en";
+    start = localStorage.getItem("msb-lang") === "es" ? "es" : "en";
   } catch (e) {}
   window.applyLang(start);
 };
