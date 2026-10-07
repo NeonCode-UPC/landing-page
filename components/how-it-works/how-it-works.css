@@ -1,0 +1,23 @@
+
+
+.how{background:linear-gradient(180deg,var(--ivory),#F1F4F0)}
+.how-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(12px,2vw,20px);margin-top:clamp(30px,4vw,52px);position:relative}
+.how-grid::before{content:"";position:absolute;left:5%;right:5%;top:22px;height:1.5px;background:repeating-linear-gradient(90deg,var(--line) 0 7px,transparent 7px 14px)}
+.how-card{position:relative;background:var(--warm);border:1px solid var(--line-soft);border-radius:var(--r-l);padding:1.2rem;display:grid;gap:.5rem;align-content:start;transition:transform .2s ease,box-shadow .2s ease}
+.how-card:hover{transform:translateY(-4px);box-shadow:var(--sh-2)}
+.how-card .num{width:44px;height:44px;border-radius:14px;display:grid;place-items:center;font-family:var(--display);font-weight:600;font-size:1rem;background:var(--ink);color:var(--warm)}
+.how-card:nth-child(2) .num{background:var(--teal)}
+.how-card:nth-child(3) .num{background:var(--blue)}
+.how-card:nth-child(4) .num{background:var(--coral)}
+.how-card h4{font-size:1.08rem;margin-top:.35rem}
+.how-card p{font-size:.88rem;color:var(--ink-2);line-height:1.5}
+.how-card:nth-child(even){margin-top:clamp(0px,2.5vw,32px)}
+
+@media (max-width:1080px){
+  .how-grid{grid-template-columns:1fr 1fr}
+  .how-grid::before{display:none}
+}
+@media (max-width:720px){
+  .how-grid{grid-template-columns:1fr}
+  .how-card:nth-child(even){margin-top:0}
+}
