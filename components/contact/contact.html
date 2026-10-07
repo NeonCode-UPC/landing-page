@@ -1,0 +1,148 @@
+<!-- CONTACTO -->
+<section class="sec contact" id="contacto">
+  <div class="wrap ct-layout">
+
+    <div class="ct-info">
+      <span class="kicker" data-i18n="ct.kicker">Contacto</span>
+      <h2 class="h-sec" data-i18n="ct.title">Hablemos de tus transportes médicos.</h2>
+      <p class="lead" data-i18n="ct.lead">Cuéntanos qué necesitas y el equipo de Medical SmartBox te responde con una demo, una cotización o la solución a tu consulta.</p>
+
+      <div class="ct-tiles">
+        <div class="ct-tile wide">
+          <a class="ct-main" href="mailto:contacto@medicalsmartbox.com">
+            <span class="ic"><i class="fa-regular fa-envelope" aria-hidden="true"></i></span>
+            <span class="tx"><span class="k" data-i18n="ct.mail">Correo</span><span class="v big">contacto@medicalsmartbox.com</span></span>
+          </a>
+          <button type="button" class="ct-copy" id="ctCopy" data-email="contacto@medicalsmartbox.com">
+            <i class="fa-regular fa-copy" aria-hidden="true"></i><span data-i18n="ct.copy">Copiar</span>
+          </button>
+        </div>
+        <a class="ct-tile t-blue" href="tel:+51900000000">
+          <span class="ic"><i class="fa-solid fa-phone" aria-hidden="true"></i></span>
+          <span class="tx"><span class="k" data-i18n="ct.tel">Teléfono</span><span class="v">+51 900 000 000</span></span>
+          <i class="fa-solid fa-arrow-right go" aria-hidden="true"></i>
+        </a>
+        <a class="ct-tile t-mint" href="https://wa.me/51900000000" rel="noopener">
+          <span class="ic"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></span>
+          <span class="tx"><span class="k">WhatsApp</span><span class="v">+51 900 000 000</span></span>
+          <i class="fa-solid fa-arrow-right go" aria-hidden="true"></i>
+        </a>
+        <div class="ct-tile t-lav is-static">
+          <span class="ic"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></span>
+          <span class="tx"><span class="k" data-i18n="ct.addr">Oficina</span><span class="v" data-i18n="foot.loc">Lima, Perú</span></span>
+        </div>
+      </div>
+
+      <div class="ct-team">
+        <div class="ct-team-top">
+          <div class="ct-stack" role="list">
+            <button type="button" class="av" role="listitem" aria-label="Aaron Espinoza"><span class="ini">AE</span><span class="tip"><b>Aaron Espinoza</b><span data-i18n="team.r1">Investigación y entrevistas</span></span></button>
+            <button type="button" class="av" role="listitem" aria-label="Maria Munayco"><span class="ini">MM</span><span class="tip"><b>Maria Munayco</b><span data-i18n="team.r2">Diseñadora UX/UI</span></span></button>
+            <button type="button" class="av" role="listitem" aria-label="Jhon Jaramillo"><span class="ini">JJ</span><span class="tip"><b>Jhon Jaramillo</b><span data-i18n="team.r3">Arquitecto de software</span></span></button>
+            <button type="button" class="av" role="listitem" aria-label="Renzo Santos"><span class="ini">RS</span><span class="tip"><b>Renzo Santos</b><span data-i18n="team.r4">Product Owner / Scrum Master</span></span></button>
+            <button type="button" class="av" role="listitem" aria-label="Santiago Gargate"><span class="ini">SG</span><span class="tip"><b>Santiago Gargate</b><span data-i18n="team.r5">Desarrollador frontend</span></span></button>
+          </div>
+          <p class="ct-team-tx"><b data-i18n="ct.team">Quién te responde</b><span data-i18n="ct.teamtx">El mismo equipo que diseña y desarrolla el producto: investigación, UX/UI, arquitectura, producto y desarrollo.</span></p>
+        </div>
+        <p class="ct-status"><span class="live-dot" aria-hidden="true"></span><span><b data-i18n="ct.fast">Respuesta en 24 horas hábiles</b> · <span data-i18n="ct.fastsub">De lunes a viernes, 9:00 a 18:00 (hora de Lima).</span></span></p>
+      </div>
+
+      <div class="ct-follow">
+        <span data-i18n="foot.follow">Síguenos</span>
+        <div class="ct-icons">
+          <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://x.com/" target="_blank" rel="noopener" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://github.com/NeonCode-UPC" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="ct-form">
+      <form id="contactForm" novalidate>
+        <h3 data-i18n="ct.ftitle">Escribe al equipo</h3>
+        <p class="sub" data-i18n="ct.fsub">Completa el formulario y te contactamos por correo. Los campos con asterisco son obligatorios.</p>
+
+        <div class="f-fail" id="ctFail" role="alert">
+          <i class="fa-solid fa-circle-exclamation" aria-hidden="true"></i>
+          <span data-i18n="ct.fail">No pudimos enviar tu mensaje. Revisa tu conexión e inténtalo de nuevo, o escríbenos directo a contacto@medicalsmartbox.com.</span>
+        </div>
+
+        <div class="f-row">
+          <div class="f-field">
+            <label for="ct-name"><span data-i18n="ct.name">Nombre completo</span> *</label>
+            <input id="ct-name" name="name" type="text" autocomplete="name" data-i18n-ph="ct.ph.name" placeholder="María Pérez" required>
+            <span class="f-err" data-i18n="ct.e.name">Escribe tu nombre.</span>
+          </div>
+          <div class="f-field">
+            <label for="ct-email"><span data-i18n="ct.email">Correo corporativo</span> *</label>
+            <input id="ct-email" name="email" type="email" autocomplete="email" data-i18n-ph="ct.ph.email" placeholder="nombre@organizacion.com" required>
+            <span class="f-err" data-i18n="ct.e.email">Escribe un correo válido, por ejemplo nombre@organizacion.com.</span>
+          </div>
+        </div>
+
+        <div class="f-row">
+          <div class="f-field">
+            <label for="ct-org"><span data-i18n="ct.org">Organización</span> <span class="opt" data-i18n="ct.opt">(opcional)</span></label>
+            <input id="ct-org" name="organization" type="text" autocomplete="organization" data-i18n-ph="ct.ph.org" placeholder="Clínica, laboratorio, operador logístico">
+          </div>
+          <div class="f-field">
+            <label for="ct-phone"><span data-i18n="ct.phone">Teléfono</span> <span class="opt" data-i18n="ct.opt">(opcional)</span></label>
+            <input id="ct-phone" name="phone" type="tel" autocomplete="tel" placeholder="+51 900 000 000">
+          </div>
+        </div>
+
+        <div class="f-field">
+          <label id="ct-topic-label" for="ctDdBtn"><span data-i18n="ct.topic">¿Sobre qué quieres hablar?</span> *</label>
+          <div class="dd" id="ctDd" data-open="false">
+            <select id="ct-topic" name="topic" class="dd-native" tabindex="-1" aria-hidden="true" required>
+              <option value="" data-i18n="ct.o0">Elige una opción</option>
+              <option value="demo" data-i18n="ct.o1">Quiero una demo guiada</option>
+              <option value="quote" data-i18n="ct.o2">Cotización o planes</option>
+              <option value="support" data-i18n="ct.o3">Soporte de la Web App</option>
+              <option value="alliance" data-i18n="ct.o4">Alianzas o prensa</option>
+              <option value="other" data-i18n="ct.o5">Otro tema</option>
+            </select>
+            <button type="button" class="dd-btn is-empty" id="ctDdBtn" aria-haspopup="listbox" aria-expanded="false" aria-controls="ctDdList">
+              <span id="ctDdVal">Elige una opción</span>
+              <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+            </button>
+            <ul class="dd-list" id="ctDdList" role="listbox" tabindex="-1" aria-labelledby="ct-topic-label"></ul>
+          </div>
+          <span class="f-err" data-i18n="ct.e.topic">Elige el tema de tu mensaje.</span>
+        </div>
+
+        <div class="f-field">
+          <label for="ct-msg"><span data-i18n="ct.msg">Mensaje</span> *</label>
+          <textarea id="ct-msg" name="message" maxlength="600" data-i18n-ph="ct.ph.msg" placeholder="Cuéntanos qué transportas, cuántos envíos haces al mes y qué te gustaría controlar mejor." required></textarea>
+          <span class="f-count" id="ctCount">0 / 600</span>
+          <span class="f-err" data-i18n="ct.e.msg">Cuéntanos en al menos 10 caracteres cómo podemos ayudarte.</span>
+        </div>
+
+        <input class="f-hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+        <label class="f-check" id="ctCheckWrap">
+          <input type="checkbox" id="ct-consent" required>
+          <span><span data-i18n="ct.consent">Acepto que Medical SmartBox use estos datos para responder mi consulta, según la</span> <a href="#" id="ctPrivacyLink" data-i18n="ct.privacy">Política de Privacidad</a>.</span>
+        </label>
+
+        <div class="f-actions">
+          <button type="submit" class="btn btn-accent btn-lg f-submit" id="ctSubmit">
+            <span data-i18n="ct.send">Enviar mensaje</span><i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+          </button>
+          <p class="f-safe" data-i18n="ct.safe">Tus datos solo los ve el equipo de Medical SmartBox.</p>
+        </div>
+      </form>
+
+      <div class="f-ok" id="ctOk" role="status" aria-live="polite">
+        <div class="ic"><i class="fa-solid fa-check" aria-hidden="true"></i></div>
+        <h3 data-i18n="ct.okTitle">Mensaje enviado</h3>
+        <p data-i18n="ct.okText">Gracias por escribirnos. Revisaremos tu consulta y te responderemos al correo que indicaste en un máximo de 24 horas hábiles.</p>
+        <button type="button" class="btn btn-ghost" id="ctAgain"><i class="fa-solid fa-rotate-left" aria-hidden="true"></i><span data-i18n="ct.again">Enviar otro mensaje</span></button>
+      </div>
+    </div>
+
+  </div>
+</section>

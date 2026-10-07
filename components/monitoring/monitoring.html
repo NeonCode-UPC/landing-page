@@ -1,0 +1,96 @@
+<!-- MONITORING -->
+<section class="sec mon" id="monitoreo">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker" data-i18n="mon.kicker">Monitoreo en tiempo real</span>
+      <h2 class="h-sec" data-i18n="mon.title">Control del transporte, incluso en movimiento.</h2>
+      <p class="lead" data-i18n="mon.lead">Ruta, vehículo, temperatura y estado del SmartBox en una sola pantalla. Si algo se desvía, se detecta antes de que el envío llegue a su destino.</p>
+    </div>
+
+    <div class="mon-stage">
+      <div class="app mon-app">
+        <div class="app-bar">
+          <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="url">neoncode-upc.github.io/frontend/home</span>
+          <span class="live-dot" aria-hidden="true"></span>
+        </div>
+        <div class="app-body">
+          <div class="rail" aria-hidden="true"><i></i><i class="on"></i><span class="sep"></span><i></i><i></i><span class="sep"></span><i></i></div>
+          <div class="app-main">
+            <div class="app-top">
+              <div style="display:flex;align-items:center;gap:.6rem;flex:1;min-width:0">
+                <b style="font-family:var(--display);letter-spacing:-.03em;font-size:1rem">TR-0417</b>
+                <span class="micro">Lima → Arequipa</span>
+                <span class="badge b-info" data-i18n="st.transit">En tránsito</span>
+              </div>
+              <span class="badge b-mute sq">SB-0182</span>
+            </div>
+
+            <div class="mon-layout">
+              <div class="map mon-map">
+                <svg viewBox="0 0 560 360" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Ruta Lima - Arequipa con posición del vehículo">
+                  <defs><linearGradient id="rg2" x1="0" x2="1"><stop offset="0" stop-color="#0F7A70"/><stop offset=".7" stop-color="#3E9C7E"/><stop offset="1" stop-color="#CFE0D6"/></linearGradient></defs>
+                  <rect width="560" height="360" fill="#EEF4F0"/>
+                  <path d="M0 120c90 26 130-18 220-6s150 60 250 26 90-40 90-40V0H0Z" fill="#E6F0E9"/>
+                  <path d="M0 300c110-40 180 12 280-14s180-40 280-6v80H0Z" fill="#E0EBE4"/>
+                  <g stroke="#CEDDD5" stroke-width="1" opacity=".85"><path d="M0 70h560M0 140h560M0 210h560M0 280h560"/><path d="M93 0v360M186 0v360M280 0v360M373 0v360M466 0v360"/></g>
+                  <path id="monRoute" d="M58 296C150 276 168 168 258 160s150 52 242-52" stroke="#C4D8CE" stroke-width="9" fill="none" stroke-linecap="round"/>
+                  <path d="M58 296C150 276 168 168 258 160s150 52 242-52" stroke="url(#rg2)" stroke-width="3.6" fill="none" stroke-linecap="round"/>
+                  <path d="M300 148c70 22 120-16 200-72" stroke="#0F7A70" stroke-width="2" fill="none" class="dash" opacity=".5"/>
+                  <circle cx="58" cy="296" r="8" fill="#fff" stroke="#0F7A70" stroke-width="3.4"/>
+                  <circle cx="500" cy="108" r="8" fill="#fff" stroke="#10312F" stroke-width="3.4"/>
+                  <g id="monVeh">
+                    <circle r="22" fill="#0F7A70" opacity=".14" class="pulse"/>
+                    <rect x="-14" y="-13" width="28" height="26" rx="8" fill="#10312F"/>
+                    <rect x="-9" y="-7" width="12" height="8" rx="2" fill="#B9DDA0"/>
+                    <circle cx="-7" cy="11" r="2.6" fill="#B9DDA0"/><circle cx="7" cy="11" r="2.6" fill="#B9DDA0"/>
+                    <animateMotion dur="30s" repeatCount="indefinite"><mpath href="#monRoute"/></animateMotion>
+                  </g>
+                  <g font-family="Plus Jakarta Sans, sans-serif" font-size="12" font-weight="600" fill="#10312F">
+                    <rect x="36" y="312" width="54" height="21" rx="10" fill="#fff" opacity=".94"/><text x="50" y="327">Lima</text>
+                    <rect x="450" y="74" width="84" height="21" rx="10" fill="#fff" opacity=".94"/><text x="462" y="89">Arequipa</text>
+                  </g>
+                  <text x="150" y="252" font-family="Plus Jakarta Sans, sans-serif" font-size="11" fill="#6B827F">Km 312 · Panamericana Sur</text>
+                </svg>
+              </div>
+
+              <div class="side-col">
+                <div class="read">
+                  <div class="cell"><b class="tnum" data-live="temp">4.2 °C</b><span data-i18n="d.temp">Temperatura</span></div>
+                  <div class="cell"><b class="tnum" data-live="eta">14:35</b><span data-i18n="d.eta">ETA</span></div>
+                  <div class="cell"><b class="tnum" data-live="batt">82 %</b><span data-i18n="d.batt">Batería</span></div>
+                  <div class="cell"><b class="tnum" data-live="fuel">64 %</b><span data-i18n="d.fuel">Combustible</span></div>
+                  <div class="cell"><b class="tnum">18.4 kg</b><span data-i18n="d.weight">Peso</span></div>
+                  <div class="cell"><b data-i18n="d.closed">Cerrada</b><span data-i18n="d.door">Puerta</span></div>
+                </div>
+                <div class="panel">
+                  <div class="panel-h"><h4 data-i18n="mon.hist">Temperatura · 6 h</h4><span class="badge b-ok" data-i18n="al.inrange">En rango</span></div>
+                  <div style="padding:.7rem">
+                    <svg viewBox="0 0 240 78" role="img" aria-label="Gráfico de temperatura">
+                      <rect x="0" y="18" width="240" height="34" fill="#E4F1EB" rx="8"/>
+                      <text x="4" y="14" font-family="Plus Jakarta Sans" font-size="9" fill="#6B827F">8 °C</text>
+                      <text x="4" y="70" font-family="Plus Jakarta Sans" font-size="9" fill="#6B827F">2 °C</text>
+                      <polyline id="tempLine" points="20,44 42,40 64,45 86,34 108,38 130,42 152,36 174,40 196,34 218,39 232,41" fill="none" stroke="#0F7A70" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+                      <circle id="tempHead" cx="232" cy="41" r="4" fill="#0F7A70" stroke="#fff" stroke-width="2"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="panel">
+                  <div class="row"><span class="rt" data-i18n="d.driver">Conductor</span><b>M. Quispe</b></div>
+                  <div class="row"><span class="rt" data-i18n="d.vehicle">Vehículo</span><b>ABQ-742</b></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mon-floats" aria-hidden="true">
+        <span class="chip mf1"><span class="dt" style="background:var(--ok)"></span><span class="tnum" data-live="temp">4.2 °C</span></span>
+        <span class="chip mf2"><span class="dt" style="background:var(--teal)"></span><span class="tnum" data-live="eta">14:35</span><small>ETA</small></span>
+        <span class="chip mf3"><span class="dt" style="background:var(--warn)"></span><span class="tnum" data-live="fuel">64 %</span><small data-i18n="d.fuel">Combustible</small></span>
+        <span class="chip mf4"><span class="dt" style="background:var(--ok)"></span><span data-i18n="d.doorclosed">Puerta cerrada</span></span>
+      </div>
+    </div>
+  </div>
+</section>
