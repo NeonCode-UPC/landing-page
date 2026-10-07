@@ -27,8 +27,8 @@
 .seq-item span{font-size:.87rem;color:var(--ink-2)}
 
 @media (max-width:900px) and (min-width:761px){
-    .team-card{flex-basis:45%}
+  .team-card{flex-basis:45%}
 }
 @media (max-width:720px){
-    .team-card{flex-basis:100%}
+  .team-card{flex-basis:100%}
 }
