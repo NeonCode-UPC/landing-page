@@ -1,3 +1,5 @@
+
+
 .hero{position:relative;padding-top:clamp(30px,4vw,54px);padding-bottom:clamp(60px,8vw,110px);overflow:hidden}
 .hero-bg{position:absolute;inset:0;z-index:0;pointer-events:none;overflow:hidden}
 .blob{position:absolute;border-radius:50%;filter:blur(64px);opacity:.75}
@@ -61,25 +63,25 @@
 
 
 @media (max-width:720px){
-    .hero-row{grid-template-columns:1fr}
-    .hero-art{max-width:220px;margin:1.5rem auto 0;padding:0}
-    .hero-grid,.mon-layout{grid-template-columns:1fr}
-    .kpis{grid-template-columns:1fr 1fr}
-    .float{position:static;width:auto!important;margin-top:12px}
-    .hero-floats{display:grid;gap:12px;margin-top:14px}
-    .f-box{display:inline-flex}
-    .app-body{grid-template-columns:44px 1fr}
-    .eco-scene{min-height:0;display:flex;flex-direction:column;align-items:center;gap:10px;padding:24px 18px}
-    .eco-lines{display:none}
-    .eco-center,.eco-node{position:static;transform:none;width:100%;box-sizing:border-box;justify-self:stretch}
-    .eco-node{justify-content:flex-start}
+  .hero-row{grid-template-columns:1fr}
+  .hero-art{max-width:220px;margin:1.5rem auto 0;padding:0}
+  .hero-grid,.mon-layout{grid-template-columns:1fr}
+  .kpis{grid-template-columns:1fr 1fr}
+  .float{position:static;width:auto!important;margin-top:12px}
+  .hero-floats{display:grid;gap:12px;margin-top:14px}
+  .f-box{display:inline-flex}
+  .app-body{grid-template-columns:44px 1fr}
+  .eco-scene{min-height:0;display:flex;flex-direction:column;align-items:center;gap:10px;padding:24px 18px}
+  .eco-lines{display:none}
+  .eco-center,.eco-node{position:static;transform:none;width:100%;box-sizing:border-box;justify-self:stretch}
+  .eco-node{justify-content:flex-start}
 }
 @media (max-width:560px){
-    .h-hero{font-size:clamp(2rem,9.4vw,2.7rem);letter-spacing:-.04em}
-    .h-hero .hl-line{white-space:normal;overflow-wrap:anywhere}
-    .hero h1{max-width:100%}
-    .hero-sub{max-width:100%}
+  .h-hero{font-size:clamp(2rem,9.4vw,2.7rem);letter-spacing:-.04em}
+  .h-hero .hl-line{white-space:normal;overflow-wrap:anywhere}
+  .hero h1{max-width:100%}
+  .hero-sub{max-width:100%}
 }
 @media (max-width:1080px){
-    .stage-app{margin-right:0}
+  .stage-app{margin-right:0}
 }

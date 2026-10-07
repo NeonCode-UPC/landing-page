@@ -1,10 +1,58 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+<!-- TRACEABILITY -->
+<section class="sec trace" id="trazabilidad">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker" data-i18n="tr.kicker">Trazabilidad</span>
+      <h2 class="h-sec" data-i18n="tr.title">Cada transporte deja un registro completo.</h2>
+      <p class="lead" data-i18n="tr.lead">Desde la preparación hasta la firma de entrega, cada evento queda registrado con hora, ubicación y condiciones. Selecciona un hito para ver el detalle.</p>
+    </div>
 
-</body>
-</html>
+    <div class="tl">
+      <div class="tl-head">
+        <div><span class="id">TR-0417</span><span class="micro" style="display:block">Lima → Arequipa · 14/09/2026</span></div>
+        <div style="display:flex;gap:.5rem;align-items:center;flex-wrap:wrap">
+          <span class="badge b-mute sq">SB-0182</span>
+          <span class="badge b-info" data-i18n="st.transit">En tránsito</span>
+          <span class="micro" data-i18n="tr.events">5 eventos registrados</span>
+        </div>
+      </div>
+
+      <div class="tl-track" role="tablist" aria-label="Eventos del transporte">
+        <button class="step done" role="tab" data-ev="0" aria-selected="false">
+          <span class="node" aria-hidden="true"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4.6 4 7.6 10 1.4" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <h5 data-i18n="tr.s1">Preparado</h5><time>08:10</time>
+        </button>
+        <button class="step done" role="tab" data-ev="1" aria-selected="false">
+          <span class="node" aria-hidden="true"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4.6 4 7.6 10 1.4" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <h5 data-i18n="tr.s2">Recogido</h5><time>08:42</time>
+        </button>
+        <button class="step done" role="tab" data-ev="2" aria-selected="false">
+          <span class="node" aria-hidden="true"><svg width="11" height="9" viewBox="0 0 11 9" fill="none"><path d="M1 4.6 4 7.6 10 1.4" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <h5 data-i18n="tr.s3">En tránsito</h5><time>10:05</time>
+        </button>
+        <button class="step now" role="tab" data-ev="3" aria-selected="true">
+          <span class="node" aria-hidden="true"><span style="width:8px;height:8px;border-radius:50%;background:var(--teal);display:block"></span></span>
+          <h5 data-i18n="tr.s4">Llegando</h5><time>14:12</time>
+        </button>
+        <button class="step pending" role="tab" data-ev="4" aria-selected="false">
+          <span class="node" aria-hidden="true"></span>
+          <h5 data-i18n="tr.s5">Entregado</h5><time class="tnum">14:35</time>
+        </button>
+      </div>
+
+      <div class="tl-detail" id="tlDetail" role="tabpanel" aria-live="polite">
+        <div class="ev"><h4 id="evTitle">Llegando a Arequipa</h4><p id="evDesc">El vehículo entró al perímetro de destino. Se notificó al centro receptor.</p></div>
+        <div class="dv"><span class="label" data-i18n="d.time">Hora</span><b class="tnum" id="evTime">14:12</b></div>
+        <div class="dv"><span class="label" data-i18n="d.location">Ubicación</span><b id="evLoc">Arequipa</b></div>
+        <div class="dv"><span class="label" data-i18n="d.temp">Temperatura</span><b class="tnum" id="evTemp">4.4 °C</b></div>
+      </div>
+
+      <div class="tl-foot">
+        <div><span class="label" data-i18n="tr.f1">Temperatura máxima</span><b class="tnum">5.1 °C</b></div>
+        <div><span class="label" data-i18n="tr.f2">Aperturas de puerta</span><b class="tnum">2</b></div>
+        <div><span class="label" data-i18n="tr.f3">Tiempo en ruta</span><b class="tnum">6 h 02 m</b></div>
+        <div><span class="label" data-i18n="tr.f4">Alertas</span><b class="tnum">1</b></div>
+      </div>
+    </div>
+  </div>
+</section>
