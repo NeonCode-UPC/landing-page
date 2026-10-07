@@ -1,10 +1,106 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+<!-- SEGMENT 1 -->
+<section class="seg seg-1" id="soluciones">
+  <div class="wrap seg-in">
+    <div class="seg-copy">
+      <span class="seg-tag"><span style="width:7px;height:7px;border-radius:50%;background:var(--teal);display:inline-block"></span><span data-i18n="sg1.tag">Para operadores</span></span>
+      <h2 data-i18n="sg1.title">Empresas de transporte y operadores de cadena de frío</h2>
+      <p class="lead" data-i18n="sg1.lead">Una vista de flota donde cada unidad muestra su ruta, su temperatura y su estado. Las incidencias se detectan de inmediato, no al cierre de la jornada.</p>
+      <ul>
+        <li><svg width="15" height="15" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="7" stroke="#0F7A70" stroke-width="1.3"/><path d="M4.8 8.2 7 10.4l4.2-4.6" stroke="#0F7A70" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="sg1.l1">Monitorear múltiples transportes a la vez</span></li>
+        <li><svg width="15" height="15" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="7" stroke="#0F7A70" stroke-width="1.3"/><path d="M4.8 8.2 7 10.4l4.2-4.6" stroke="#0F7A70" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="sg1.l2">Controlar temperatura y aperturas de puerta</span></li>
+        <li><svg width="15" height="15" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="7" stroke="#0F7A70" stroke-width="1.3"/><path d="M4.8 8.2 7 10.4l4.2-4.6" stroke="#0F7A70" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="sg1.l3">Revisar ETA y desvíos de ruta</span></li>
+        <li><svg width="15" height="15" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="7" stroke="#0F7A70" stroke-width="1.3"/><path d="M4.8 8.2 7 10.4l4.2-4.6" stroke="#0F7A70" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="sg1.l4">Responder alertas con el contexto completo</span></li>
+      </ul>
+      <a href="https://neoncode-upc.github.io/frontend/home" class="btn btn-accent btn-lg" data-i18n="sg1.cta">Gestionar transportes</a>
+    </div>
 
-</body>
-</html>
+    <div class="seg-visual">
+      <div class="app fleet">
+        <div class="app-bar"><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="url">neoncode-upc.github.io/frontend/home</span></div>
+        <div class="app-body">
+          <div class="rail" aria-hidden="true"><i></i><i class="on"></i><span class="sep"></span><i></i><i></i><span class="sep"></span><i></i></div>
+          <div class="app-main">
+            <div class="app-top">
+              <div class="search"><span data-i18n="app.searchFleet">Filtrar por ruta, estado o SmartBox</span></div>
+              <span class="badge b-info tnum">18</span>
+            </div>
+            <div class="panel">
+              <div class="panel-h"><h4 data-i18n="sg1.fleet">Flota en ruta</h4><span class="micro" data-i18n="sg1.updated">Actualizado hace 40 s</span></div>
+              <button class="row" data-fleet='{"id":"TR-0417","temp":"4.2 °C","eta":"14:35","box":"SB-0182","km":"312 km"}' aria-pressed="true"><span class="id">TR-0417</span><span class="rt">Lima → Arequipa</span><span class="thermo"><i style="width:44%;background:var(--ok)"></i></span><span class="badge b-info" data-i18n="st.transit">En tránsito</span></button>
+              <button class="row" data-fleet='{"id":"TR-0251","temp":"8.7 °C","eta":"16:10","box":"SB-0177","km":"88 km"}' aria-pressed="false"><span class="id">TR-0251</span><span class="rt">Lima → Trujillo</span><span class="thermo"><i style="width:88%;background:var(--crit)"></i></span><span class="badge b-crit" data-i18n="st.alert">Alerta</span></button>
+              <button class="row" data-fleet='{"id":"TR-0249","temp":"3.8 °C","eta":"15:02","box":"SB-0190","km":"142 km"}' aria-pressed="false"><span class="id">TR-0249</span><span class="rt">Callao → Ica</span><span class="thermo"><i style="width:38%;background:var(--ok)"></i></span><span class="badge b-info" data-i18n="st.transit">En tránsito</span></button>
+              <button class="row" data-fleet='{"id":"TR-0246","temp":"6.4 °C","eta":"18:40","box":"SB-0165","km":"204 km"}' aria-pressed="false"><span class="id">TR-0246</span><span class="rt">Lima → Huancayo</span><span class="thermo"><i style="width:62%;background:var(--warn)"></i></span><span class="badge b-warn" data-i18n="st.watch">En observación</span></button>
+              <button class="row" data-fleet='{"id":"TR-0244","temp":"4.0 °C","eta":"—","box":"SB-0158","km":"196 km"}' aria-pressed="false"><span class="id">TR-0244</span><span class="rt">Callao → Chincha</span><span class="thermo"><i style="width:40%;background:var(--ok)"></i></span><span class="badge b-ok" data-i18n="st.delivered">Entregado</span></button>
+            </div>
+            <div class="fleet-detail" aria-live="polite">
+              <div><span data-i18n="d.transport">Transporte</span><b id="flId">TR-0417</b></div>
+              <div><span data-i18n="d.temp">Temperatura</span><b class="tnum" id="flTemp">4.2 °C</b></div>
+              <div><span data-i18n="d.eta">ETA</span><b class="tnum" id="flEta">14:35</b></div>
+              <div><span>SmartBox</span><b id="flBox">SB-0182</b></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SEGMENT 2 -->
+<section class="seg seg-2">
+  <div class="wrap seg-in">
+    <div class="seg-copy">
+      <span class="seg-tag"><span style="width:7px;height:7px;border-radius:50%;background:var(--violet);display:inline-block"></span><span data-i18n="sg2.tag">Para receptores</span></span>
+      <h2 data-i18n="sg2.title">Centros de salud y cadenas farmacéuticas</h2>
+      <p class="lead" data-i18n="sg2.lead">Para quien recibe, lo importante es qué llega, cuándo y en qué condiciones. La vista de envíos entrantes lo responde desde el móvil.</p>
+      <ul>
+        <li><svg width="15" height="15" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="7" stroke="#5D57B0" stroke-width="1.3"/><path d="M4.8 8.2 7 10.4l4.2-4.6" stroke="#5D57B0" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="sg2.l1">Ver los envíos que llegan hoy</span></li>
+        <li><svg width="15" height="15" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="7" stroke="#5D57B0" stroke-width="1.3"/><path d="M4.8 8.2 7 10.4l4.2-4.6" stroke="#5D57B0" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="sg2.l2">Consultar ETA y ubicación en camino</span></li>
+        <li><svg width="15" height="15" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="7" stroke="#5D57B0" stroke-width="1.3"/><path d="M4.8 8.2 7 10.4l4.2-4.6" stroke="#5D57B0" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="sg2.l3">Revisar las condiciones del transporte</span></li>
+        <li><svg width="15" height="15" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="7" stroke="#5D57B0" stroke-width="1.3"/><path d="M4.8 8.2 7 10.4l4.2-4.6" stroke="#5D57B0" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="sg2.l4">Confirmar la entrega y guardar el historial</span></li>
+      </ul>
+      <a href="https://neoncode-upc.github.io/frontend/home" class="btn btn-primary btn-lg" data-i18n="sg2.cta">Ver mis envíos</a>
+    </div>
+
+    <div class="seg-visual">
+      <div class="phone">
+        <div class="phone-scr">
+          <div class="phone-top">
+            <div class="t"><span class="tnum">09:41</span><span data-i18n="sg2.center">Clínica San Borja</span></div>
+            <h5 data-i18n="sg2.inbox">Llegan hoy</h5>
+            <span class="micro" data-i18n="sg2.inboxSub">3 envíos · 1 en ruta ahora</span>
+          </div>
+          <div class="phone-list">
+            <div class="inbox-card">
+              <div class="hd"><b>TR-0417</b><span class="badge b-info" data-i18n="st.transit">En tránsito</span></div>
+              <span class="rt">Lima → Arequipa · SB-0182</span>
+              <div class="grid">
+                <div><span class="label" data-i18n="d.eta">ETA</span><b class="tnum" data-live="eta">14:35</b></div>
+                <div><span class="label" data-i18n="d.temp">Temp.</span><b class="tnum" data-live="temp">4.2 °C</b></div>
+                <div><span class="label" data-i18n="d.state">Estado</span><b data-i18n="al.inrange">En rango</b></div>
+              </div>
+            </div>
+            <div class="inbox-card">
+              <div class="hd"><b>TR-0245</b><span class="badge b-ok" data-i18n="st.delivered">Entregado</span></div>
+              <span class="rt">Callao → San Borja · SB-0166</span>
+              <div class="grid">
+                <div><span class="label" data-i18n="sg2.received">Recibido</span><b class="tnum">08:12</b></div>
+                <div><span class="label" data-i18n="d.temp">Temp.</span><b class="tnum">3.9 °C</b></div>
+                <div><span class="label" data-i18n="d.state">Estado</span><b data-i18n="sg2.ok">Conforme</b></div>
+              </div>
+            </div>
+            <div class="inbox-card" style="border-color:var(--lav)">
+              <div class="hd"><b>TR-0253</b><span class="badge b-mute" data-i18n="st.scheduled">Programado</span></div>
+              <span class="rt">Lima → San Borja · SB-0190</span>
+              <div class="grid">
+                <div><span class="label" data-i18n="d.eta">ETA</span><b class="tnum">17:50</b></div>
+                <div><span class="label" data-i18n="sg2.items">Ítems</span><b class="tnum">12</b></div>
+                <div><span class="label" data-i18n="d.state">Estado</span><b data-i18n="sg2.pending">Por salir</b></div>
+              </div>
+            </div>
+          </div>
+          <div class="phone-nav" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
