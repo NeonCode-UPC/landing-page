@@ -24,6 +24,6 @@
 .video-soon.on{opacity:1;transform:translate(-50%,0)}
 
 @media (max-width:1080px){
-    .video-grid{grid-template-columns:1fr}
-    .video-grid-rev .video-frame{order:initial}
+  .video-grid{grid-template-columns:1fr}
+  .video-grid-rev .video-frame{order:initial}
 }
