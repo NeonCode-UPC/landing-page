@@ -97,21 +97,21 @@ html:has(dialog[open]){overflow:hidden}
 
 /* ---------- Responsive ---------- */
 @media (max-width:760px){
-    .legal-grid{grid-template-columns:1fr;grid-template-rows:auto minmax(0,1fr);height:min(88dvh,680px)}
-    .legal-side{flex-direction:row;flex-wrap:wrap;align-items:center;gap:.2rem .9rem;padding:18px 64px 16px 20px}
-    .legal-ic{width:40px;height:40px;font-size:.95rem;margin:0}
-    .legal-side h2{font-size:1.2rem;flex:1;min-width:0}
-    .legal-meta,.legal-points{display:none}
-    .legal-main{padding:18px 16px 14px 20px}
-    .legal-lead{margin-right:0;font-size:.86rem}
+  .legal-grid{grid-template-columns:1fr;grid-template-rows:auto minmax(0,1fr);height:min(88dvh,680px)}
+  .legal-side{flex-direction:row;flex-wrap:wrap;align-items:center;gap:.2rem .9rem;padding:18px 64px 16px 20px}
+  .legal-ic{width:40px;height:40px;font-size:.95rem;margin:0}
+  .legal-side h2{font-size:1.2rem;flex:1;min-width:0}
+  .legal-meta,.legal-points{display:none}
+  .legal-main{padding:18px 16px 14px 20px}
+  .legal-lead{margin-right:0;font-size:.86rem}
 
-    .login-grid{grid-template-columns:1fr}
-    .login-side{padding:20px 22px;gap:.4rem}
-    .login-side .login-art,.login-side ul{display:none}
-    .login-side h3{max-width:none;font-size:1.15rem;margin:0}
-    .login-main{padding:26px 22px 24px}
-    .sheet-x{top:12px;right:12px}
+  .login-grid{grid-template-columns:1fr}
+  .login-side{padding:20px 22px;gap:.4rem}
+  .login-side .login-art,.login-side ul{display:none}
+  .login-side h3{max-width:none;font-size:1.15rem;margin:0}
+  .login-main{padding:26px 22px 24px}
+  .sheet-x{top:12px;right:12px}
 }
 @media (prefers-reduced-motion:reduce){
-    .sheet[open]{animation:none}
+  .sheet[open]{animation:none}
 }

@@ -15,6 +15,7 @@
 .testi-who .id b{display:block;font-size:.86rem}
 .testi-who .id span{font-size:.74rem;color:var(--ink-3);line-height:1.35}
 
+/* Tarjeta larga a la izquierda (dos filas) */
 .testi-card.is-feature{grid-row:1 / span 2;gap:1.2rem;padding:1.8rem 1.9rem}
 .testi-card.is-feature .testi-mark{font-size:3.2rem;top:1.2rem;right:1.7rem}
 .testi-card.is-feature p{flex:1;font-family:var(--display);font-size:clamp(1.12rem,1.6vw,1.34rem);font-weight:500;line-height:1.45;letter-spacing:-.015em;color:var(--ink)}
@@ -22,6 +23,7 @@
 .testi-card.is-feature .testi-who .id b{font-size:.92rem}
 .testi-card.is-feature .testi-who .id span{font-size:.78rem}
 
+/* Tarjeta ancha abajo a la derecha */
 .testi-card.is-wide{grid-column:2 / -1;flex-direction:row;align-items:center;gap:1.2rem;padding:1.4rem 1.6rem}
 .testi-card.is-wide .testi-avatar{width:40px;height:40px;font-size:.82rem}
 .testi-card.is-wide .testi-body{display:flex;flex-direction:column;gap:.7rem;min-width:0;padding-right:1.6rem}

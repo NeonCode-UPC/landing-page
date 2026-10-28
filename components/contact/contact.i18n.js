@@ -62,7 +62,7 @@ window.registerI18n && window.registerI18n({
     "ct.ph.email": "nombre@organizacion.com",
     "ct.ph.org": "Clínica San Lucas",
     "ct.ph.msg": "Qué transportas, rutas frecuentes o plazos que manejas."
-  },
+},
   en: {
     "ct.kicker": "Hire Medical SmartBox",
     "ct.title": "Start monitoring your medical transports.",
@@ -125,5 +125,5 @@ window.registerI18n && window.registerI18n({
     "ct.ph.email": "name@organization.com",
     "ct.ph.org": "San Lucas Clinic",
     "ct.ph.msg": "What you transport, frequent routes or lead times you work with."
-  }
+}
 });

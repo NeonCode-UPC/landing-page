@@ -13,7 +13,7 @@ window.registerI18n && window.registerI18n({
     "team.d2": "Diseñó la experiencia de usuario y el sistema visual, haciendo que los datos complejos del transporte sean fáciles de interpretar y manteniendo cada pantalla clara e intuitiva.",
     "team.d3": "Definió la arquitectura técnica de Medical SmartBox, integrando los componentes del sistema para que el producto gestione los datos de forma confiable a medida que escala.",
     "team.d4": "Mantuvo al equipo alineado con los objetivos del producto, organizando prioridades y guiando el desarrollo desde la idea hasta la implementación."
-  },
+},
   en: {
     "team.kicker": "The team",
     "team.title": "Who's building Medical SmartBox.",
@@ -26,5 +26,5 @@ window.registerI18n && window.registerI18n({
     "team.d2": "Designed the user experience and visual system, making complex transport data easy to interpret while keeping every screen clear and intuitive.",
     "team.d3": "Defined the technical architecture of Medical SmartBox, integrating the system's components so the product handles data reliably as it scales.",
     "team.d4": "Kept the team aligned with the product goals, organizing priorities and guiding development from idea to implementation."
-  }
+}
 });
