@@ -1,4 +1,0 @@
-
-
-window.initAlerts = function() {
-};
