@@ -1,4 +1,0 @@
-
-
-window.initFeatures = function() {
-};
