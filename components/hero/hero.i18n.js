@@ -15,8 +15,10 @@ window.registerI18n && window.registerI18n({
     "eco.n2": "Vehículo",
     "eco.n3": "Operador",
     "eco.n4": "Centro receptor",
-    "strip.live": "Datos en vivo"
-},
+    "strip.live": "Datos en vivo",
+    "al.title": "Temperatura fuera de rango",
+    "al.desc": "TR-0251 superó el límite superior durante 6 minutos en Panamericana Sur."
+  },
   en: {
     "hero.kicker": "Medical transport platform",
     "hero.title": "<span class=\"hl-line\">Everything</span><span class=\"hl-line\">happening during</span><span class=\"hl-line\">a medical</span><span class=\"hl-line\">transport, <span class=\"grad\">in one place</span>.</span>",
@@ -31,6 +33,8 @@ window.registerI18n && window.registerI18n({
     "eco.n2": "Vehicle",
     "eco.n3": "Operator",
     "eco.n4": "Receiving center",
-    "strip.live": "Live data"
-}
+    "strip.live": "Live data",
+    "al.title": "Temperature out of range",
+    "al.desc": "TR-0251 stayed above the upper limit for 6 minutes on Panamericana Sur."
+  }
 });
