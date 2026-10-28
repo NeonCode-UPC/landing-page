@@ -24,3 +24,8 @@
 @media (max-width:720px){
   .mon-layout{grid-template-columns:1fr}
 }
+
+.mon .mon-app,.mon .mon-app .app-main,.mon .mon-floats{color:var(--ink)}
+.mon .mon-app b,.mon .mon-app h4,.mon .mon-app .tnum,.mon .mon-app .row b,.mon .mon-floats .chip,.mon .mon-floats .chip .tnum{color:var(--ink)}
+.mon .mon-app .micro,.mon .mon-app .row .rt,.mon .mon-floats .chip small{color:var(--ink-3)}
+.mon .mon-app .map text{font-family:Inter,system-ui,sans-serif}

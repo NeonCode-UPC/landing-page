@@ -27,11 +27,12 @@ window.registerI18n && window.registerI18n({
     "d.connected": "Conectado · 60 s",
     "d.doorclosed": "Puerta cerrada",
     "d.trace": "Eventos registrados",
+    "al.inrange": "En rango",
     "mon.kicker": "Monitoreo en tiempo real",
     "mon.title": "Control del transporte, incluso en movimiento.",
     "mon.lead": "Ruta, vehículo, temperatura y estado del SmartBox en una sola pantalla. Si algo se desvía, se detecta antes de que el envío llegue a su destino.",
     "mon.hist": "Temperatura · 6 h"
-},
+  },
   en: {
     "st.transit": "In transit",
     "st.delay": "Delayed",
@@ -58,9 +59,10 @@ window.registerI18n && window.registerI18n({
     "d.connected": "Connected · 60 s",
     "d.doorclosed": "Door closed",
     "d.trace": "Events recorded",
+    "al.inrange": "In range",
     "mon.kicker": "Real-time monitoring",
     "mon.title": "Control over every transport, even on the move.",
     "mon.lead": "Route, vehicle, temperature and SmartBox status on one screen. If anything drifts, it is detected before the shipment reaches its destination.",
     "mon.hist": "Temperature · 6 h"
-}
+  }
 });
