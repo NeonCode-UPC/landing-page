@@ -10,6 +10,9 @@
 .nav-links a::after{content:"";position:absolute;left:0;bottom:0;height:1.5px;width:0;background:var(--teal);transition:width .22s ease;border-radius:2px}
 .nav-links a:hover{color:var(--ink)}
 .nav-links a:hover::after{width:100%}
+.nav-links a.nav-hire{padding:.4rem 1rem;border-radius:var(--r-pill);background:var(--teal-pale);color:var(--teal-deep);font-weight:600;transition:background .2s ease,color .2s ease,transform .2s ease}
+.nav-links a.nav-hire::after{display:none}
+.nav-links a.nav-hire:hover{background:var(--teal);color:#fff;transform:translateY(-1px)}
 .nav-right{margin-left:auto;display:flex;align-items:center;gap:.9rem}
 .nav-login{font-size:.93rem;font-weight:600;padding:.5rem .4rem;transition:color .18s ease;white-space:nowrap}
 .nav-login:hover{color:var(--teal)}
