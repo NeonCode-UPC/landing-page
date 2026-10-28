@@ -1,5 +1,7 @@
 
 window.initContact = function() {
+  // Para recibir las solicitudes sin abrir el correo del usuario, pega aquí el endpoint
+  // de un servicio de formularios (ej.: "https://formspree.io/f/xxxxxxx").
   const FORM_ENDPOINT = "";
   const TO_EMAIL = "contacto@medicalsmartbox.com";
 
@@ -18,6 +20,8 @@ window.initContact = function() {
   const radio = name => form.querySelector('input[name="' + name + '"]:checked');
   const val = id => document.getElementById(id).value;
 
+  /* ---------- Validación ---------- */
+  // Cada regla sabe qué campo revisar y cuál es su contenedor (.f-field).
   const rules = {
     plan:  { ok: () => !!radio("plan"),                                  focus: () => form.querySelector('input[name="plan"]') },
     qty:   { ok: () => { const n = Number(val("ct-qty")); return Number.isInteger(n) && n >= 1 && n <= 999; }, focus: () => document.getElementById("ct-qty") },
@@ -37,6 +41,7 @@ window.initContact = function() {
     return !bad;
   }
 
+  // Revisa al salir del campo y limpia el error en cuanto se corrige.
   ["qty", "org", "name", "email"].forEach(key => {
     const el = rules[key].focus();
     if (!el) return;
@@ -53,6 +58,7 @@ window.initContact = function() {
     consent.addEventListener("change", () => cWrap.classList.toggle("err", !consent.checked));
   }
 
+  /* ---------- Comentario opcional (oculto hasta que se pide) ---------- */
   const more = document.getElementById("ctMore");
   const msgWrap = document.getElementById("ctMsgWrap");
   if (more && msgWrap) {
@@ -64,6 +70,7 @@ window.initContact = function() {
     });
   }
 
+  /* ---------- Estimado en vivo (valor referencial) ---------- */
   const PRICES = { small: 110, standard: 160 };
   const estVal = document.getElementById("ctEstVal");
   function updateEstimate() {
@@ -80,6 +87,7 @@ window.initContact = function() {
   document.getElementById("ct-qty").addEventListener("input", updateEstimate);
   updateEstimate();
 
+  /* ---------- Selector de cantidad (− / +) ---------- */
   form.querySelectorAll(".f-num button").forEach(b => {
     b.addEventListener("click", () => {
       const input = document.getElementById(b.dataset.target);
@@ -93,6 +101,7 @@ window.initContact = function() {
   });
   document.getElementById("ct-qty").addEventListener("change", updateEstimate);
 
+  /* ---------- Envío ---------- */
   const planNames = { small: "Small Box (5 L)", standard: "Standard Box (20 L)", advice: "Necesita asesoría para elegir" };
 
   function readData() {
@@ -218,6 +227,7 @@ window.initContact = function() {
     });
   }
 
+  /* ---------- Copiar correo ---------- */
   const copyBtn = document.getElementById("ctCopy");
   if (copyBtn) {
     let timer;
