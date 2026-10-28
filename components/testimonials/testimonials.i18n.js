@@ -17,7 +17,7 @@ window.registerI18n && window.registerI18n({
     "testi.r2": "Jefe de Operaciones, Clínica San Rafael",
     "testi.r3": "Especialista en Transporte Sanitario, RedVital Perú",
     "testi.r4": "Coordinador de Cadena de Frío, FarmaLogística SAC"
-  },
+},
   en: {
     "testi.kicker": "Voices from the road",
     "testi.title": "People who already trust Medical SmartBox with a shipment.",
@@ -34,5 +34,5 @@ window.registerI18n && window.registerI18n({
     "testi.r2": "Head of Operations, Clínica San Rafael",
     "testi.r3": "Healthcare Transport Specialist, RedVital Perú",
     "testi.r4": "Cold Chain Coordinator, FarmaLogística SAC"
-  }
+}
 });
