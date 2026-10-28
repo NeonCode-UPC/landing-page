@@ -74,7 +74,7 @@ window.registerI18n && window.registerI18n({
     "login.legal1": "Al entrar aceptas los",
     "login.legal2": "y la",
     "login.privacy": "Política de privacidad"
-  },
+},
   en: {
     "legal.write": "Write to us",
     "pp.title": "Privacy policy",
@@ -149,5 +149,5 @@ window.registerI18n && window.registerI18n({
     "login.legal1": "By continuing you accept the",
     "login.legal2": "and the",
     "login.privacy": "Privacy policy"
-  }
+}
 });
