@@ -120,7 +120,6 @@ transition:transform .18s ease,background .18s ease,color .18s ease,box-shadow .
 .login-field input:focus{border-color:var(--teal);background:var(--warm);outline:none}
 .login-row{display:flex;align-items:center;justify-content:space-between;font-size:.82rem;color:var(--ink-2);gap:.8rem}
 .login-row label{display:flex;align-items:center;gap:.5rem;font-weight:500}
-.login-row input[type="checkbox"]{width:auto;accent-color:var(--teal)}
 .login-row a{color:var(--teal);font-weight:600}
 .login-note{margin-top:1.15rem;background:var(--teal-pale);border:1px solid var(--line-soft);border-radius:var(--r-m);padding:.8rem 1rem;font-size:.82rem;color:var(--teal-deep);display:flex;gap:.6rem;align-items:flex-start;line-height:1.5}
 .login-note i{margin-top:.2rem;flex:none}

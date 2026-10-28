@@ -38,12 +38,11 @@ window.registerI18n && window.registerI18n({
     "pl.p3.l4": "Historial de telemetría de 12 meses",
     "pl.price": "Suscripción mensual por SmartBox",
     "pl.price2": "Cotización según tu flota",
-    "pl.cta": "Solicitar cotización",
+    "pl.cta": "Contratar este plan",
     "pl.note": "Los valores son referenciales y se facturan por SmartBox activo. El cupo de SmartBoxes y de ambulancias, y el nivel de soporte, se acuerdan en el contrato de tu institución. Si prefieres comprar el equipo en lugar de usarlo en comodato, el costo de entrada referencial es de US$ 180.",
     "pl.per": "por SmartBox activo al mes",
     "pl.p1.usd": "≈ US$ 30 al mes",
-    "pl.p2.usd": "≈ US$ 45 al mes",
-    "pl.prefill": "Me interesa el plan {plan}. "
+    "pl.p2.usd": "≈ US$ 45 al mes"
 },
   en: {
     "pl.kicker": "Business model",
@@ -82,11 +81,10 @@ window.registerI18n && window.registerI18n({
     "pl.p3.l4": "12 months of telemetry history",
     "pl.price": "Monthly subscription per SmartBox",
     "pl.price2": "Quote based on your fleet",
-    "pl.cta": "Request a quote",
+    "pl.cta": "Hire this plan",
     "pl.note": "Values are indicative and billed per active SmartBox. The SmartBox and ambulance quota, and the support level, are agreed in your institution's contract. If you prefer to buy the hardware instead of using it on loan, the indicative entry cost is US$ 180.",
     "pl.per": "per active SmartBox per month",
     "pl.p1.usd": "≈ US$ 30 per month",
-    "pl.p2.usd": "≈ US$ 45 per month",
-    "pl.prefill": "I'm interested in the {plan} plan. "
+    "pl.p2.usd": "≈ US$ 45 per month"
 }
 });

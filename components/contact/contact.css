@@ -1,4 +1,5 @@
 
+/* ---------- Layout ---------- */
 .ct-layout{display:grid;grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);gap:clamp(28px,4.5vw,64px);align-items:start}
 .ct-info{}
 .ct-info h2{margin:.9rem 0 1rem}
@@ -10,7 +11,7 @@
 .ct-steps li:nth-child(2) .n{background:var(--lav-pale);color:var(--violet)}
 .ct-steps li:nth-child(3) .n{background:var(--blue-pale);color:var(--blue)}
 
-/* ---------- Equipo  ---------- */
+/* ---------- Equipo (igual que la primera versión) ---------- */
 .ct-team{margin-top:1.1rem;background:linear-gradient(160deg,var(--teal-pale),var(--lav-pale));border:1px solid var(--line-soft);border-radius:var(--r-l);padding:1.2rem 1.3rem 1.1rem;transition:box-shadow .3s ease,transform .3s ease}
 .ct-team:hover{box-shadow:var(--sh-2);transform:translateY(-2px)}
 .ct-team-top{display:flex;align-items:center;gap:1.1rem}
@@ -33,7 +34,7 @@
 .ct-status b{color:var(--ink);font-weight:600}
 .ct-status .live-dot{margin-top:.5rem}
 
-/* ---------- Tarjetas de contacto ---------- */
+/* ---------- Tarjetas de contacto (como la primera versión) ---------- */
 .ct-tiles{display:grid;grid-template-columns:1.12fr 1.12fr .8fr;gap:.75rem;margin-top:clamp(24px,3vw,34px);container-type:inline-size}
 .ct-tile{position:relative;display:flex;align-items:center;gap:.85rem;background:var(--warm);border:1px solid var(--line-soft);border-radius:18px;padding:.9rem 1rem;box-shadow:var(--sh-1);overflow:hidden;transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}
 .ct-tile::before{content:"";position:absolute;inset:auto -30% -60% auto;width:140px;height:140px;border-radius:50%;background:radial-gradient(closest-side,var(--teal-pale),transparent);opacity:.9;pointer-events:none;transition:transform .5s ease,opacity .3s ease}

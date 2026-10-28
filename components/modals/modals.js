@@ -16,6 +16,7 @@ window.initModals = function() {
     }
   }
 
+  /* Abrir: cualquier elemento con data-open-dialog y los enlaces de login */
   document.querySelectorAll("[data-open-dialog]").forEach(el => {
     el.addEventListener("click", e => {
       e.preventDefault();
@@ -29,6 +30,7 @@ window.initModals = function() {
     });
   });
 
+  /* Cerrar: botón, enlaces marcados y clic en el fondo */
   dialogs.forEach(dlg => {
     dlg.querySelectorAll("[data-close-dialog]").forEach(el => el.addEventListener("click", () => dlg.close()));
     dlg.addEventListener("click", e => { if (e.target === dlg) dlg.close(); });
@@ -50,7 +52,7 @@ window.initModals = function() {
     });
   }
   if (form) {
-
+    // La autenticación real ocurre dentro de la Web App: aquí solo llevamos al usuario hasta allá.
     form.addEventListener("submit", e => {
       e.preventDefault();
       window.location.href = WEBAPP_URL;
