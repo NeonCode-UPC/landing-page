@@ -3,7 +3,7 @@
 .team-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:clamp(28px,4vw,46px)}
 .team-card{background:var(--warm);border:1px solid var(--line-soft);border-radius:var(--r-l);padding:1.3rem 1.45rem;box-shadow:var(--sh-1);transition:transform .2s ease,box-shadow .2s ease}
 .team-card:hover{transform:translateY(-3px);box-shadow:var(--sh-2)}
-
+/* Tarjeta horizontal: avatar a la izquierda, texto a la derecha */
 .team-card{display:grid;grid-template-columns:auto minmax(0,1fr);column-gap:1.15rem;align-content:start;padding:1.5rem 1.6rem}
 .team-card .team-avatar{grid-row:1 / span 3;width:50px;height:50px;font-size:.92rem}
 .team-card .team-name{grid-column:2}
@@ -40,6 +40,7 @@
   .team-card .team-avatar{width:42px;height:42px;font-size:.8rem}
 }
 
+/* ---------- Acabado de las tarjetas del equipo ---------- */
 .team-card{position:relative;overflow:hidden;--tc:var(--mint);--tbg:var(--teal-pale);--tfg:var(--teal-deep);padding:1.6rem 1.7rem 1.7rem;border-color:var(--line-soft)}
 .team-card:nth-child(2){--tc:var(--lav);--tbg:var(--lav-pale);--tfg:var(--violet)}
 .team-card:nth-child(3){--tc:var(--blue-pale);--tbg:var(--blue-pale);--tfg:var(--blue)}
