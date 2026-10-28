@@ -8,7 +8,7 @@ window.registerI18n && window.registerI18n({
     "cta.secondary": "Iniciar sesión",
     "cta.note": "Cada organización accede a la Web Application con su propia cuenta.",
     "cta.contact": "Solicitar contratación"
-  },
+},
   en: {
     "cta.title": "Make every part of the journey visible.",
     "cta.sub": "Know the status of your transports, catch incidents and keep the traceability of every shipment.",
@@ -16,5 +16,5 @@ window.registerI18n && window.registerI18n({
     "cta.secondary": "Log in",
     "cta.note": "Each organization accesses the Web Application with its own account.",
     "cta.contact": "Request hiring"
-  }
+}
 });
