@@ -3,18 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Monitoring and traceability platform for medical product transport. Discover Medical SmartBox and contact our team.">
+  <meta name="description" content="Plataforma de monitoreo y trazabilidad para el transporte de productos médicos. Conoce Medical SmartBox y solicita tu contratación.">
   <title>Medical SmartBox — Monitoring and traceability for medical transport</title>
 
+  <!-- Fuentes e iconos -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
+  <!-- Estilos compartidos -->
   <link rel="stylesheet" href="shared/styles/tokens.css">
   <link rel="stylesheet" href="shared/styles/base.css">
   <link rel="stylesheet" href="shared/styles/components.css">
-  
+
+  <!-- Estilos por componente -->
   <link rel="stylesheet" href="components/nav/nav.css">
   <link rel="stylesheet" href="components/hero/hero.css">
   <link rel="stylesheet" href="components/platform/platform.css">
@@ -33,49 +36,33 @@
 </head>
 <body>
 
-  
   <!-- NAV -->
   <div data-include="components/nav/nav.html"></div>
 
   <!-- SECCIONES -->
   <main id="top">
-    
     <div data-include="components/hero/hero.html"></div>
-
     <div data-include="components/platform/platform.html"></div>
-    
     <div data-include="components/monitoring/monitoring.html"></div>
-
     <div data-include="components/traceability/traceability.html"></div>
-
     <div data-include="components/videos/videos.html"></div>
-
     <div data-include="components/team/team.html"></div>
-
     <div data-include="components/stories/stories.html"></div>
-    
     <div data-include="components/testimonials/testimonials.html"></div>
-
     <div data-include="components/how-it-works/how-it-works.html"></div>
-
     <div data-include="components/plans/plans.html"></div>
-
     <div data-include="components/cta/cta.html"></div>
-
     <div data-include="components/contact/contact.html"></div>
   </main>
 
-  <!-- MODALES Y PIE DE LA LANDING-->
+  <!-- MODALES Y PIE -->
   <div data-include="components/modals/modals.html"></div>
-
   <div data-include="components/footer/footer.html"></div>
 
-  
-  
   <!-- SCRIPTS -->
   <script src="shared/i18n.js"></script>
 
-  
+  <!-- Textos por componente -->
   <script src="components/nav/nav.i18n.js"></script>
   <script src="components/hero/hero.i18n.js"></script>
   <script src="components/platform/platform.i18n.js"></script>
@@ -92,7 +79,7 @@
   <script src="components/footer/footer.i18n.js"></script>
   <script src="components/modals/modals.i18n.js"></script>
 
-  
+  <!-- Comportamiento por componente -->
   <script src="components/nav/nav.js"></script>
   <script src="components/hero/hero.js"></script>
   <script src="components/platform/platform.js"></script>
@@ -109,6 +96,7 @@
   <script src="components/footer/footer.js"></script>
   <script src="components/modals/modals.js"></script>
 
+  <!-- Plantillas (respaldo para abrir el archivo sin servidor) -->
   <script src="components/nav/nav.template.js"></script>
   <script src="components/hero/hero.template.js"></script>
   <script src="components/platform/platform.template.js"></script>
@@ -122,15 +110,11 @@
   <script src="components/plans/plans.template.js"></script>
   <script src="components/cta/cta.template.js"></script>
   <script src="components/contact/contact.template.js"></script>
-  <script src="components/modals/modals.template.js"></script>
   <script src="components/footer/footer.template.js"></script>
+  <script src="components/modals/modals.template.js"></script>
 
   <script src="script.js"></script>
-
-  
   <script src="shared/telemetry.js"></script>
-
-  
   <script src="shared/loader.js"></script>
 </body>
 </html>
