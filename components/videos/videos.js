@@ -2,7 +2,7 @@
 
 const VIDEO_IDS = {
   "video-producto": "X0bqgC3zW-4",
-  "video-equipo": ""
+  "video-equipo": "wPZtzlj4zcs"
 };
 
 const VIDEO_TITLES = {
